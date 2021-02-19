@@ -20,7 +20,9 @@ function pictureSlider() {
 }
 window.onload = pictureSlider;
 
-const header = document.querySelector(".header");
+const header = document.querySelector(".home");
+const headerss = document.querySelector(".header");
+
 const topLink = document.querySelector(".top-link");
 
 window.addEventListener("scroll", function() {
@@ -28,8 +30,10 @@ window.addEventListener("scroll", function() {
     const headerheight = header.getBoundingClientRect().height;
     if (scrollheight > headerheight) {
         header.classList.add("fixed-header");
+        headerss.style.backgroundColor = " white"
     } else {
         header.classList.remove("fixed-header");
+        headerss.style.backgroundColor = "#f3d28b"
     }
 });
 
@@ -179,19 +183,21 @@ const he = document.querySelector(".he");
 const heade = document.querySelector(".header");
 const navg = document.querySelector(".nav");
 
+
 hamburger.addEventListener("click", function() {
-    nav.classList.add("show-nav-list");
-    clos.style.display = "block";
+    navg.classList.add("show-nav");
     he.style.display = "none";
     hamburger.style.display = "none";
-    navg.style.backgroundColor = "white";
+    clos.style.display = "block";
+
+
 });
 clos.addEventListener("click", function() {
-    nav.classList.remove("show-nav-list");
     clos.style.display = "none";
+
+    navg.classList.remove("show-nav");
     he.style.display = "flex";
     hamburger.style.display = "block";
-    navg.style.backgroundColor = "#f3d28b";
 });
 
 const cartButton = document.querySelectorAll(".cart");

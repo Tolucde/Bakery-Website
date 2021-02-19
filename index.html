@@ -10,9 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css\bootstrap.min.css" />
     <link rel="stylesheet" href="fontawesome-free-5.12.0-web\css\all.min.css" />
-    <link rel="stylesheet" href="css\hover-min.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="css\aos.css" />
 </head>
 
 <body>
@@ -20,46 +18,46 @@
         <div class="header">
             <div class="he">
                 <div class="top-left">
-                    <button class="carti"><i class="fa fa-3x fa-cart-arrow-down"></i></button>
+                    <button class="carti"><i class="fa fa-3x fa-cart-arrow-down"><span class="cart-text">CART</span></i></button>
                 </div>
-                <aside class="cartlist" id="cartlist">
-                    <button class="closecart"><i class=" fa fa-times"></i></button>
-                    <h2 class="h2 text-center font-weight-bolder">YOUR CART</h2>
-                    <div class="cartitemitem">
-                        <div class="cart-name">
-                            <p class="cart-namee">ITEMS</p>
-                        </div>
-                        <div class="cart-price">PRICE
-                        </div>
-                        <div class="cart-quantity">QUANTITY</div>
-                        <div class="remove-cart">
-                            REMOVE
-                        </div>
-                    </div>
-                    <div class="cart-bottom" id="cart-bottom">
-                        <div class="cart-total">TOTAL:<span id="total"></span></div>
-                        <button class="clear-cart">RESET CART</button>
-                    </div>
-                </aside>
+
                 <div class="logo">O<span class="top">P</span>T
                 </div>
             </div>
             <button class="hamburger"><i class="fas fa-2x fa-bars"></i> </button>
             <button class="close"><i class="fas fa-2x fa-times-circle"></i> </button>
-
-            <nav class="nav">
-                <ul class="nav-list" id="nav-list">
-                    <li class="nav-link"><a class="links" href="#home">Home</a></li>
-                    <li class="nav-link"><a class="links" href="#about">About</a></li>
-                    <li class="nav-link"><a class="links" href="#shop">Shop</a></li>
-                    <li class="nav-link"><a class="links" href="#reviews">Reviews</a></li>
-                    <li class="nav-link"><a class="links" href="#contact">Contact</a></li>
-                </ul>
-            </nav>
         </div>
+        <div class="nav">
+            <ul class="nav-list" id="nav-list">
+                <li class="nav-link"><a class="links" href="#home">Home</a></li>
+                <li class="nav-link"><a class="links" href="#about">About</a></li>
+                <li class="nav-link"><a class="links" href="#shop">Shop</a></li>
+                <li class="nav-link"><a class="links" href="#reviews">Reviews</a></li>
+                <li class="nav-link"><a class="links" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <aside class="cartlist" id="cartlist">
+            <button class="closecart"><i class=" fa fa-times"></i></button>
+            <h2 class="h2 text-center font-weight-bolder">YOUR CART</h2>
+            <div class="cartitemitem">
+                <div class="cart-name">
+                    <p class="cart-namee">ITEMS</p>
+                </div>
+                <div class="cart-price">PRICE
+                </div>
+                <div class="cart-quantity">QUANTITY</div>
+                <div class="remove-cart">
+                    REMOVE
+                </div>
+            </div>
+            <div class="cart-bottom" id="cart-bottom">
+                <div class="cart-total">TOTAL:<span id="total"></span></div>
+                <button class="clear-cart">RESET CART</button>
+            </div>
+        </aside>
     </header>
 
-    <section class="section1" data-aos="f">
+    <section class="section1">
         <div class="slider">
             <img name="slide">
             <div class="banner-text ">
@@ -68,43 +66,38 @@
         </div>
     </section>
     <section class="section2" id="about">
-        <div class="container-fluid">
-            <div class="row pt-10" data-aos="fade-up">
-                <div class="support col-md-4  col-xs-12" data-aos="slide-right">
-                    <ul class="sec2">
-                        <li class="head"><i class="fas fa-user"></i><br>CUSTOMER SERVICE</li>
-                        <ul class="subhead">
-                            <li>Efficient Customer care</li>
-                            <li>Prompt response to enquiries</li>
-                            <li>Orders can be made anytime </li>
-                        </ul>
-                </div>
-                <div class="support col-md-4  col-xs-12">
-                    <ul class="sec2">
-                        <li class="head"><i class="fas fa-car"></i><br> DELIVERY</li>
-                        <ul class="subhead">
-                            <li>Free Delivery Statewide</li>
-                            <li>Free Delivery after every 3rd purchase</li>
-                            <li>Refund available</li>
-                </div>
-                <div class="support col-md-4  col-xs-12" data-aos="slide-left">
-                    <ul class="sec2">
-                        <li class="head"><i class="fas fa-hotdog"></i><br> ORDER</li>
-                        <ul class="subhead">
-                            <li>The best & most special cakes</li>
-                            <li> Assorted Bread and Snacks </li>
-                            <li>Top quality Pizza and ice creams </li>
-                        </ul>
-                    </ul>
-                </div>
-            </div>
+        <div class="support ">
+            <ul class="sec2">
+                <li class="head"><i class="fas fa-user"></i><br>CUSTOMER SERVICE</li>
+                <ul class="subhead">
+                    <li>Efficient Customer care</li>
+                    <li>Prompt response to enquiries</li>
+                    <li>Orders can be made anytime </li>
+                </ul>
+            </ul>
+            <ul class="sec2">
+                <li class="head"><i class="fas fa-car"></i><br> DELIVERY</li>
+                <ul class="subhead">
+                    <li>Free Delivery Statewide</li>
+                    <li>Free Delivery after every 3rd purchase</li>
+                    <li>Refund available</li>
+                </ul>
+            </ul>
+            <ul class="sec2">
+                <li class="head"><i class="fas fa-hotdog"></i><br> ORDER</li>
+                <ul class="subhead">
+                    <li>The best & most special cakes</li>
+                    <li> Assorted Bread and Snacks </li>
+                    <li>Top quality Pizza and ice creams </li>
+                </ul>
+            </ul>
         </div>
     </section>
     <section class="section3">
         <div id="shop">
             <h1 class="shop-head text-center ">SHOP</h1>
             <div class="container shopc pt-5 ">
-                <div class="row" data-aos="fade-down">
+                <div class="row">
                     <div class="col-xs-4 col-md-3">
                         <div class="item">
                             <img src="assets\download">
@@ -154,7 +147,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row" data-aos="fade-left">
+                <div class="row">
                     <div class="col-xs-4 col-md-3">
 
                         <div class="item">
@@ -206,7 +199,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row" data-aos="fade-up">
+                <div class="row">
 
                     <div class="col-xs-4 col-md-3">
 
@@ -263,33 +256,34 @@
         </div>
     </section>
     <section class="section4">
-        <div class="reviews" id="reviews" data-aos="fade-right">
+        <div class="reviews" id="reviews">
             <h1 class="review-head">REVIEWS</h1>
             <article class="rev">
                 <div class="img-container">
                     <img src="IMG_20181024_011411.jpg" id="person-img"></div>
                 <h2 id="person"></h2>
                 <p id="info"></p>
-                <div class="prev">
-                    <span id="prev"><i class="fa fa-3x fa-chevron-left left"></i></span>
-                </div>
-                <div class="next"><span id="next"><i class="fa fa-3x fa-chevron-right right"></i></span>
-                </div>
+
             </article>
+            <div class="prev">
+                <span id="prev"><i class="fa fa-3x fa-chevron-left left"></i></span>
+            </div>
+            <div class="next"><span id="next"><i class="fa fa-3x fa-chevron-right right"></i></span>
+            </div>
         </div>
-        <div class="reviews management" data-aos="fade-left">
+        <div class="reviews management">
             <h1 class="review-head">OUR MANAGEMENT</h1>
             <article class="rev">
                 <div class="img-container">
                     <img src="IMG_20181024_011411.jpg" id="staff-img"></div>
                 <h2 id="worker"></h2>
                 <p id="job"></p>
-                <div class="prev">
-                    <span id="prevs"><i class="fa fa-3x fa-chevron-left left"></i></span>
-                </div>
-                <div class="next"><span id="nexts"><i class="fa fa-3x fa-chevron-right right"></i></span>
-                </div>
             </article>
+            <div class="prev">
+                <span id="prevs"><i class="fa fa-3x fa-chevron-left left"></i></span>
+            </div>
+            <div class="next"><span id="nexts"><i class="fa fa-3x fa-chevron-right right"></i></span>
+            </div>
         </div>
 
     </section>
@@ -361,12 +355,7 @@
 
     <script src="app.js"></script>
     <script src="js\aos.js"></script>
-    <script>
-        AOS.init({
-            offset: 150,
-            duration: 0
-        })
-    </script>
+
 </body>
 
 </html>
